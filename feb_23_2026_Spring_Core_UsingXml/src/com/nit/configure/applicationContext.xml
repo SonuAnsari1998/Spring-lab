@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Bean definition -->
+    
+ 
+    	<bean id="ldate1" class="java.time.LocalDate" factory-method="now"/>
+ 
+    	<bean id="wmg1" class="com.nit.sbeans.WeekDayAnalyze">
+    	<property name="date" ref="ldate1"/>
+    	</bean> 
+    	
+    
+    
+    	<bean id="ldate2" class="java.time.LocalDate" factory-method="now"/>
+
+    	<bean id="wmg2" class="com.nit.sbeans.CalendarService">
+    	<property name="date" ref="ldate2"/>
+    	</bean> 
+    
+    	
+    	
+    	
+
+</beans>

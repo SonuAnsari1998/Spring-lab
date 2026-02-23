@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-25">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="F:/Batch-51/Back-end/Springboot-Microservices-lab/spring jar file/spring-aop-7.0.3.jar"/>
+	<classpathentry kind="lib" path="F:/Batch-51/Back-end/Springboot-Microservices-lab/spring jar file/spring-beans-7.0.3.jar"/>
+	<classpathentry kind="lib" path="F:/Batch-51/Back-end/Springboot-Microservices-lab/spring jar file/spring-context-7.0.3.jar"/>
+	<classpathentry kind="lib" path="F:/Batch-51/Back-end/Springboot-Microservices-lab/spring jar file/spring-context-support-7.0.3.jar"/>
+	<classpathentry kind="lib" path="F:/Batch-51/Back-end/Springboot-Microservices-lab/spring jar file/spring-core-7.0.3.jar"/>
+	<classpathentry kind="lib" path="F:/Batch-51/Back-end/Springboot-Microservices-lab/spring jar file/spring-expression-7.0.3.jar"/>
+	<classpathentry kind="lib" path="F:/Batch-51/Back-end/Springboot-Microservices-lab/spring jar file/spring-jcl-6.2.15.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
