@@ -3,6 +3,8 @@ package com.nit.main;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 import com.nit.sbeans.CalendarService;
+import com.nit.sbeans.SchedulerService;
+import com.nit.sbeans.TimeService;
 import com.nit.sbeans.WeekDayAnalyze;
 import com.nit.sbeans.YearService;
 
@@ -20,6 +22,14 @@ public class WeekDayMain {
 		System.out.println("\n------Question --> 03 -----------\n");
 		YearService bean3 = (YearService) ctx.getBean("wmg3");
 		System.out.println(bean3.getMonth());
+		
+		System.out.println("\n------Question --> 04 -----------\n");
+		TimeService bean4 = (TimeService) ctx.getBean("wmg4");
+		System.out.println(bean4.getHour());
+		
+		System.out.println("\n------Question --> 05 -----------\n");
+		SchedulerService bean5 = (SchedulerService) ctx.getBean("wmg5");
+		System.out.println(bean5.getDay());
 	}
 }
 

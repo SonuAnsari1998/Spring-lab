@@ -29,6 +29,18 @@
     	<property name="date" ref="ldate3"/>
     	</bean> 
     
+    	<bean id="ltime3" class="java.time.LocalTime" factory-method="now"/>
+    	
+    	<bean id="wmg4" class="com.nit.sbeans.TimeService">
+    	<property name="lTime" ref="ltime3"/>
+    	</bean> 
+    	
+    	
+    	<bean id="ltime5" class="java.time.LocalDate" factory-method="now"/>
+    	
+    	<bean id="wmg5" class="com.nit.sbeans.SchedulerService">
+    	<property name="lDate" ref="ltime5"/>
+    	</bean> 
     	
     	
     	
