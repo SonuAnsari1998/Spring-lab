@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Bean definition -->
+    	<bean class="com.nit.sbeans.Engine" id="eng1">
+    	<constructor-arg name="engineType" value="Diesel"/>
+    	<constructor-arg name="horsePower" value="180"/>
+    	</bean>
+    	
+    	<bean class="com.nit.sbeans.Tyre" id="eng2">
+    	<property name="brand" value="MRF"/>
+    	<property name="size" value="18"/>
+    	</bean>
+    	
+    	<bean class="com.nit.sbeans.Vehicle" id="eng3">
+    	<property name="vehicleName" value="Toyota Fortuner"/>
+    	<constructor-arg name="engine" ref="eng1"/>
+    	</bean>
+    	
+    	<bean class="com.nit.sbeans.ServiceCenter" id="eng4">
+    	<property name="serviceType" value="Full Engine Checkup"/>
+    	</bean>
+    	
+    	
+    
+
+</beans>
