@@ -12,9 +12,9 @@ public class Company {
 	}
 
 	public void showCompanyInfo() {
-		department.forEach((k,v)->System.out.println(k+"   "+v));
 		
 		System.out.println("Company: " + this.companyName);
+//		department.forEach((k,v)->System.out.println(k+"   "+v));
 	}
 
 }

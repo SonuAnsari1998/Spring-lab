@@ -17,8 +17,8 @@ public class Employee {
 		this.project = project;
 	}
 
-	public String showEmployeeDetails() {
-		return "Employee [employeeId=" + employeeId + ", employeeName=" + employeeName + ", project=" + project + "]";
+	public void showEmployeeDetails() {
+		System.out.println("Employee: "+this.employeeName+" | Project: "+project.projectName+" ("+project.duration+" Months)");
 	}
 	
 	
