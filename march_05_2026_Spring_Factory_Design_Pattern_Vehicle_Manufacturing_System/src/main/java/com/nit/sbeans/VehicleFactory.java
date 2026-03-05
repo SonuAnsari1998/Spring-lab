@@ -1,0 +1,18 @@
+package com.nit.sbeans;
+
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class VehicleFactory {
+
+	@Autowired
+	Map<String, Vehicle> map;
+
+	public Vehicle getVehicle(String type) {
+		return map.get(type);
+	}
+
+}
