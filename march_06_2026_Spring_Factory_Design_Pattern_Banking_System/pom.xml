@@ -3,11 +3,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.nit.task</groupId>
-  <artifactId>march_06_2026_Spring_Factory_Design_Pattern_Vehicle_Manufacturing_System</artifactId>
+  <groupId>com.nit</groupId>
+  <artifactId>march_05_2026_Spring_Factory_Design_Pattern_Vehicle_Manufacturing_System</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>march_06_2026_Spring_Factory_Design_Pattern_Vehicle_Manufacturing_System</name>
+  <name>march_05_2026_Spring_Factory_Design_Pattern_Vehicle_Manufacturing_System</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -40,7 +40,6 @@
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
     </dependency>
-    
     <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-context-support</artifactId>
