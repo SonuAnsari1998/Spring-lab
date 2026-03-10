@@ -1,27 +1,24 @@
 package com.nit.sbeans;
 
+import java.time.LocalDate;
 import java.util.Locale;
+import java.util.Scanner;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.support.ResourceBundleMessageSource;
-
 
 public class App {
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
-		String languate = IO.readln("Enter language (en, fr, hi, te)");
-		
-		Locale locale = new Locale(languate);
-		
-		MessageSource bean = ctx.getBean(MessageSource.class);
-		String m = bean.getMessage("msg", new Object[] {}, locale);
-		
-		
-		
-		
-		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter locale (en, fr, hi, te):");
+		String lang = sc.nextLine();
+		Locale locale = LocaleSelector.getLocale(lang);
+		LocalDate now = LocalDate.now();
+		String formatted = DateFormatterUtil.formatDateForLocale(locale, now);
+		MessageSource ms = ctx.getBean(MessageSource.class);
+		String message = ms.getMessage("date.message", new Object[] { formatted }, locale);
+		System.out.println(message);
+		sc.close();
 	}
 }
